@@ -1,5 +1,5 @@
 const Koa = require("koa");
-const router = require("./router/router");
+const router = require("./router");
 const middleware = require("./middleware");
 
 const app = new Koa();
