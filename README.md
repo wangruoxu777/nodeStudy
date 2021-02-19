@@ -1,2 +1,2 @@
 # nodeStudy
-node学习
+脚手架搭建
