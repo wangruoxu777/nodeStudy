@@ -140,7 +140,7 @@ export default {
 .todo-list .item {
   font-size: 20px;
 }
-.todo-list .item .finished {
+.todo-list .finished {
   text-decoration: line-through;
   color: #dddddd;
 }

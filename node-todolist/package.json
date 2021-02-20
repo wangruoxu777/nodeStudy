@@ -20,6 +20,9 @@
     "koa-json": "^2.0.2",
     "koa-logger": "^3.2.1",
     "koa-router": "^10.0.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.5.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },

@@ -1,8 +1,8 @@
 const app = new (require("koa"))();
 const koa = require("koa-router")();
-console.log(koa);
 const json = require("koa-json");
 const logger = require("koa-logger");
+const { auth } = require("./server/controllers/user");
 app.use(require("koa-bodyparser")());
 app.use(json());
 app.use(logger());
@@ -15,6 +15,9 @@ app.use(function*(next) {
 app.on("error", (err, ctx) => {
   console.log("server error", err);
 });
+
+koa.use("/auth", auth.routes());
+app.use(koa.routes());
 app.listen(3100, () => {
   console.log("koa is listerning in 3100 http://localhost:3100");
 });
